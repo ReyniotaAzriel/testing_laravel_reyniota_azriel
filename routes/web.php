@@ -27,5 +27,10 @@ Route::middleware('auth')->group(function () {
 
     Route::controller(PendudukController::class)->prefix('kependudukan/penduduk')->group(function () {
         Route::get('', 'index')->name('penduduk');
+        Route::get('/new', 'createPendudukPage')->name('create_penduduk');
+        Route::post('/add', 'createPendudukRequest')->name('add_penduduk');
+        Route::get('/update/{id}', 'editPendudukPage')->name('update_penduduk');
+        Route::post('/edit/{id}', 'editPendudukRequest')->name('edit_penduduk');
+        Route::post('/delete/{id}', 'deletePendudukRequest')->name('delete_penduduk');
     });
 });

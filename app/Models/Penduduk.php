@@ -10,6 +10,7 @@ class Penduduk extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'name',
         'gender',
         'place_of_birth',

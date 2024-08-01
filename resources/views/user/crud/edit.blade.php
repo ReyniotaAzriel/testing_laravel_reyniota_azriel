@@ -9,6 +9,9 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title mb-3">
+                        <a href="{{ route('user') }}" class="btn btn-secondary me-2">
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
                         Ubah User
                     </h1>
 
